@@ -1,0 +1,74 @@
+{
+  "type": "CheckConfig",
+  "api_version": "core/v2",
+  "metadata": {
+    "name": "ping",
+    "namespace": "default"
+  },
+  "spec": {
+    "command": "check_ping -H {{ .labels.ip_address }} -w 50,5% -c 100,10%",
+    "subscriptions": [
+      "poller"
+    ],
+    "proxy_requests": {
+      "entity_attributes": [
+        "entity.entity_class == 'proxy'", "entity.labels.proxy_type == 'device'"
+      ]
+    }
+  }
+}
+{
+  "type": "CheckConfig",
+  "api_version": "core/v2",
+  "metadata": {
+    "name": "tcp_connect",
+    "namespace": "default"
+  },
+  "spec": {
+    "command": "check_tcp -H {{ .labels.ip_address }} -p {{ .labels.port }}",
+    "subscriptions": [
+      "poller"
+    ],
+    "proxy_requests": {
+      "entity_attributes": [
+        "entity.entity_class == 'proxy'", "entity.labels.proxy_type == 'service'"
+      ]
+    }
+  }
+}
+{
+  "type": "CheckConfig",
+  "api_version": "core/v2",
+  "metadata": {
+    "name": "num_procs",
+    "namespace": "default"
+  },
+  "spec": {
+    "check_hooks": [
+      {
+        "ok": [
+          "process_tree"
+        ]
+      }
+    ],
+    "command": "/usr/lib64/nagios/plugins/check_procs",
+    "env_vars": null,
+    "handlers": [],
+    "high_flap_threshold": 0,
+    "interval": 60,
+    "low_flap_threshold": 0,
+    "output_metric_format": "",
+    "output_metric_handlers": [],
+    "proxy_entity_name": "",
+    "publish": true,
+    "round_robin": false,
+    "runtime_assets": [],
+    "stdin": false,
+    "subdue": null,
+    "subscriptions": [
+      "entity:sensu-go"
+    ],
+    "timeout": 0,
+    "ttl": 0
+  }
+}

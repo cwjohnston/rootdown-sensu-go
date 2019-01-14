@@ -1,0 +1,15 @@
+{
+  "type": "HookConfig",
+  "api_version": "core/v2",
+  "metadata": {
+    "name": "process_tree",
+    "namespace": "default",
+    "labels": null,
+    "annotations": null
+  },
+  "spec": {
+    "command": "ps aux",
+    "timeout": 60,
+    "stdin": false
+  }
+}
