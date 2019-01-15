@@ -81,8 +81,8 @@
     "namespace": "default",
     "labels": {
       "proxy_type": "device",
-      "ip_address": "192.168.10.1"
-      "snmp_target": true
+      "ip_address": "192.168.10.1",
+      "snmp_target": "true"
     }
   },
   "spec": {
