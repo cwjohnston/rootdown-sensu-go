@@ -73,3 +73,19 @@
     "entity_class": "proxy"
   }
 }
+{
+  "type": "Entity",
+  "api_version": "core/v2",
+  "metadata": {
+    "name": "edgerouter",
+    "namespace": "default",
+    "labels": {
+      "proxy_type": "device",
+      "ip_address": "192.168.10.1"
+      "snmp_target": true
+    }
+  },
+  "spec": {
+    "entity_class": "proxy"
+  }
+}
