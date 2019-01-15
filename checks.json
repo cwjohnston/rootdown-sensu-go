@@ -77,9 +77,7 @@
   "spec": {
     "check_hooks": [
       {
-        "ok": [
-          "process_tree"
-        ]
+        "non-zero": [ "process_tree" ]
       }
     ],
     "command": "/usr/lib64/nagios/plugins/check_procs",
