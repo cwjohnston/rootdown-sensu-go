@@ -7,14 +7,18 @@
   },
   "spec": {
     "command": "check_ping -H {{ .labels.ip_address }} -w 50,5% -c 100,10%",
+    "timeout": 5,
     "interval": 10,
+    "publish": true,
     "subscriptions": [
       "poller"
     ],
     "proxy_requests": {
       "entity_attributes": [
         "entity.entity_class == 'proxy'", "entity.labels.proxy_type == 'device'"
-      ]
+      ],
+      "splay": true,
+      "splay_coverage": 90
     }
   }
 }
@@ -27,14 +31,18 @@
   },
   "spec": {
     "command": "check_tcp -H {{ .labels.ip_address }} -p {{ .labels.port }}",
+    "timeout": 5,
     "interval": 10,
+    "publish": true,
     "subscriptions": [
       "poller"
     ],
     "proxy_requests": {
       "entity_attributes": [
         "entity.entity_class == 'proxy'", "entity.labels.proxy_type == 'service'"
-      ]
+      ],
+      "splay": true,
+      "splay_coverage": 90
     }
   }
 }
