@@ -7,6 +7,7 @@
   },
   "spec": {
     "command": "check_ping -H {{ .labels.ip_address }} -w 50,5% -c 100,10%",
+    "interval": 10,
     "subscriptions": [
       "poller"
     ],
@@ -26,6 +27,7 @@
   },
   "spec": {
     "command": "check_tcp -H {{ .labels.ip_address }} -p {{ .labels.port }}",
+    "interval": 10,
     "subscriptions": [
       "poller"
     ],
