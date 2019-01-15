@@ -42,6 +42,27 @@
   "type": "CheckConfig",
   "api_version": "core/v2",
   "metadata": {
+    "name": "scrape_snmp",
+    "namespace": "default"
+  },
+  "spec": {
+    "command": "/usr/local/bin/sensu-prometheus-collector -exporter-url http://localhost:9116/snmp?target={{ .labels.ip_address }}&module={{ .labels.snmp_modules }}",
+    "interval": 10,
+    "subscriptions": [
+      "poller"
+    ],
+    "runtime_assets": ["prometheus-collector"],
+    "proxy_requests": {
+      "entity_attributes": [
+        "entity.entity_class == 'proxy'", "entity.labels.proxy_type == 'device'", "entity.labels.snmp_target == true"
+      ]
+    }
+  }
+}
+{
+  "type": "CheckConfig",
+  "api_version": "core/v2",
+  "metadata": {
     "name": "num_procs",
     "namespace": "default"
   },
