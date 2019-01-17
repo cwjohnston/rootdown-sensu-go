@@ -38,8 +38,8 @@
         "namespace": "default"
     },
     "spec": {
-        "url": "https://github.com/cwjohnston/sensu-pushover-handler/releases/download/0.0.1/sensu-pushover-handler_0.0.1_linux_amd64.tar.gz",
-        "sha512": "f2e86a42115b165cae968ded5da8a72d2f9fef592f01ddf0e228e0b44641d63a9054628d349dd10cf3d4aa042ae806967091762fa3799e5fff2d6ef62fd81ac2",
+        "url": "https://github.com/cwjohnston/sensu-pushover-handler/releases/download/0.0.2/sensu-pushover-handler_0.0.2_linux_amd64.tar.gz",
+        "sha512": "03033795fd30cb8424c15e0b8276e73e74b83525b0da70e4fbf9abac4f6960e39cbe83974bf0a607e7b633b0f294b0f26ec49687b26e2e4c6f816a2bc917de24",
         "filters": [
             "entity.system.os == 'linux'",
             "entity.system.arch == 'amd64'"
