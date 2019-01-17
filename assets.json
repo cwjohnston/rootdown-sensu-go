@@ -30,3 +30,19 @@
         ]
     }
 }
+{
+    "type": "Asset",
+    "api_version": "core/v2",
+    "metadata": {
+        "name": "pushover-handler",
+        "namespace": "default"
+    },
+    "spec": {
+        "url": "https://github.com/cwjohnston/sensu-pushover-handler/releases/download/0.0.1/sensu-pushover-handler_0.0.1_linux_amd64.tar.gz",
+        "sha512": "f2e86a42115b165cae968ded5da8a72d2f9fef592f01ddf0e228e0b44641d63a9054628d349dd10cf3d4aa042ae806967091762fa3799e5fff2d6ef62fd81ac2",
+        "filters": [
+            "entity.system.os == 'linux'",
+            "entity.system.arch == 'amd64'"
+        ]
+    }
+}
