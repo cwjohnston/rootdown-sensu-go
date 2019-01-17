@@ -54,7 +54,7 @@
     "namespace": "default"
   },
   "spec": {
-    "command": "/usr/local/bin/sensu-prometheus-collector -exporter-url http://localhost:9116/snmp?target={{ .labels.ip_address }}&module={{ .labels.snmp_modules }}",
+    "command": "/usr/local/bin/sensu-prometheus-collector -exporter-url http://localhost:9116/snmp?target={{ .labels.ip_address }}",
     "interval": 60,
     "timeout": 10,
     "publish": true,
