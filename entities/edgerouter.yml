@@ -1,0 +1,18 @@
+type: Entity
+api_version: core/v2
+metadata:
+  labels:
+    ip_address: 192.168.10.1
+    proxy_type: device
+    snmp_target: "true"
+  name: edgerouter
+  namespace: default
+spec:
+  deregister: false
+  deregistration: {}
+  entity_class: proxy
+  last_seen: 0
+  subscriptions: null
+  system:
+    network:
+      interfaces: null

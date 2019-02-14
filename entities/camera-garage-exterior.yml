@@ -1,0 +1,17 @@
+type: Entity
+api_version: core/v2
+metadata:
+  labels:
+    ip_address: 192.168.250.122
+    proxy_type: device
+  name: camera-garage-exterior
+  namespace: default
+spec:
+  deregister: false
+  deregistration: {}
+  entity_class: proxy
+  last_seen: 0
+  subscriptions: null
+  system:
+    network:
+      interfaces: null
