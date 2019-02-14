@@ -1,0 +1,11 @@
+type: Asset
+api_version: core/v2
+metadata:
+  name: pushover-handler
+  namespace: default
+spec:
+  filters:
+  - entity.system.os == 'linux'
+  - entity.system.arch == 'amd64'
+  sha512: 03033795fd30cb8424c15e0b8276e73e74b83525b0da70e4fbf9abac4f6960e39cbe83974bf0a607e7b633b0f294b0f26ec49687b26e2e4c6f816a2bc917de24
+  url: https://github.com/cwjohnston/sensu-pushover-handler/releases/download/0.0.2/sensu-pushover-handler_0.0.2_linux_amd64.tar.gz
