@@ -1,0 +1,18 @@
+type: Handler
+api_version: core/v2
+metadata:
+  name: pushover
+  namespace: default
+spec:
+  command: sensu-pushover-handler
+  env_vars:
+  - PUSHOVER_APP_TOKEN=auvdLUnCP3b6s3X5Goz917rRYjcee4
+  - PUSHOVER_USER_KEY=uZhMeLmgrnUYYCMs6vpQRSCgiLmw5U
+  filters:
+  - is_incident
+  - not_silenced
+  handlers: null
+  runtime_assets:
+  - pushover-handler
+  timeout: 10
+  type: pipe
