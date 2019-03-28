@@ -1,0 +1,18 @@
+type: Entity
+api_version: core/v2
+metadata:
+  labels:
+    url: http://192.168.250.15:8123
+    proxy_type: website
+    ipaddress: 192.168.250.15
+  name: hass-io
+  namespace: default
+spec:
+  deregister: false
+  deregistration: {}
+  entity_class: proxy
+  last_seen: 0
+  subscriptions: null
+  system:
+    network:
+      interfaces: null
