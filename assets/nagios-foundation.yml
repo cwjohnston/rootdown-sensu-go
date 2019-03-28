@@ -1,0 +1,11 @@
+type: Asset
+api_version: core/v2
+metadata:
+  name: nagios-foundation-checks
+  namespace: default
+spec:
+  filters:
+  - entity.system.os == 'linux'
+  - entity.system.arch == 'amd64'
+  sha512: e0341dbe2836ba6f603a99ad76caa1dca1767469b755b0b4c54fec699eb5e80164914a2f63fdf56aae82847a2f67ee9067e63ba63f79e22dcb7d8ba26f691bdc
+  url: https://github.com/ncr-devops-platform/nagios-foundation/releases/download/0.0.15/nagiosfoundation-linux-amd64-0.0.15.tgz
