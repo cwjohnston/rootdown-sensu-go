@@ -25,3 +25,4 @@ spec:
   - entity:sensu-go
   timeout: 0
   ttl: 0
+  discard_output: true
