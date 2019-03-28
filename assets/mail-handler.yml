@@ -1,0 +1,14 @@
+---
+type: Asset
+api_version: core/v2
+metadata:
+  name: sensu-email-handler
+  namespace: default
+  labels: {}
+  annotations: {}
+spec:
+  url: https://github.com/sensu/sensu-email-handler/releases/download/0.1.0/sensu-email-handler_0.1.0_linux_amd64.tar.gz
+  sha512: 755c7a673d94997ab9613ec5969666e808f8b4a8eec1ba998ee7071606c96946ca2947de5189b24ac34a962713d156619453ff7ea43c95dae62bf0fcbe766f2e
+  filters:
+  - entity.system.os == 'linux'
+  - entity.system.arch == 'amd64'
