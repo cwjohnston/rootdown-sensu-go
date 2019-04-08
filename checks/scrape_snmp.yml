@@ -20,6 +20,6 @@ spec:
   runtime_assets:
     - prometheus-collector
   subscriptions:
-    - snmp_poller
+    - poller
   timeout: 10
   discard_output: true
