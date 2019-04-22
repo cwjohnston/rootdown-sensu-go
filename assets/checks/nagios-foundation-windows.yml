@@ -1,0 +1,12 @@
+---
+type: Asset
+api_version: core/v2
+metadata:
+  name: nagios-foundation-windows
+  namespace: default
+spec:
+  filters:
+  - entity.system.os == 'windows'
+  - entity.system.arch == 'amd64'
+  sha512: ddc82cbd7e8e19015659f187af4014f35f6054b4018545f0fc8657860e0a3005c96a6ccfc92900b0f1eac74c5318724af926a1cd22543359f965d0d1a3b7e381
+  url: https://github.com/ncr-devops-platform/nagios-foundation/releases/download/0.1.0/nagiosfoundation-windows-amd64-0.1.0.tgz
