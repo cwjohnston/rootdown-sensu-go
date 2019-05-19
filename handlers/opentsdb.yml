@@ -1,0 +1,14 @@
+---
+type: Handler
+api_version: core/v2
+metadata:
+  name: opentsdb
+  namespace: default
+spec:
+  command: sensu-opentsdb-handler -a 127.0.0.1:4242
+  filters:
+    - has_metrics
+  runtime_assets:
+    - opentsdb-handler
+  timeout: 10
+  type: pipe

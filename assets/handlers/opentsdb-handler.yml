@@ -1,0 +1,12 @@
+---
+type: Asset
+api_version: core/v2
+metadata:
+  name: opentsdb-handler
+  namespace: default
+spec:
+  url: https://github.com/jkerry/sensu-opentsdb-handler/releases/download/v0.6.0/sensu-opentsdb-handler_0.6.0_linux_amd64.tar.gz
+  sha512: 15a96c5ff39499952baa166b26b29c069a226c234ce383972df48b39f24f6d76a32a2be3c11929885c7073e658f9108dbb65519386a03340c8bbb4b77bf8e513
+  filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
