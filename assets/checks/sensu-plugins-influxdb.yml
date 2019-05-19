@@ -1,0 +1,14 @@
+---
+type: Asset
+api_version: core/v2
+metadata:
+  name: sensu-plugins-influxdb
+  namespace: default
+  labels: {}
+  annotations: {}
+spec:
+  url: https://github.com/sensu-plugins/sensu-plugins-influxdb/releases/download/2.0.0/sensu-plugins-influxdb_2.0.0_centos_linux_amd64.tar.gz
+  sha512: 841905b191fe7907c618403a77565a08e78ddeb1e575ae4b579d442fede25b2c0c6994353d8efe664e459588b1e99abcd4cb6089e528b2e7d30132f0ee4164fe
+  filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'

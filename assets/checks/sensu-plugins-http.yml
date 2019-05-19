@@ -1,0 +1,15 @@
+---
+type: Asset
+api_version: core/v2
+metadata:
+  name: sensu-plugins-http
+  namespace: default
+  labels: {}
+  annotations: {}
+spec:
+  url: https://github.com/sensu-plugins/sensu-plugins-http/releases/download/5.0.0/sensu-plugins-http_5.0.0_centos_linux_amd64.tar.gz
+  sha512: 31023af6e0073729eecb0f5ab834ddc467eeaa1d9b998cbf528f3302104814ec717fc746af470556c496806fa8db66e6ded75aef97d73abdfa29615a81270ee6
+  filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
+    - entity.system.platform_family == 'rhel'

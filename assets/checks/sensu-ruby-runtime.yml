@@ -1,0 +1,15 @@
+---
+type: Asset
+api_version: core/v2
+metadata:
+  name: sensu-ruby-runtime
+  namespace: default
+  labels: {}
+  annotations: {}
+spec:
+  url: https://github.com/sensu/sensu-ruby-runtime/releases/download/0.0.5/sensu-ruby-runtime_0.0.5_centos_linux_amd64.tar.gz
+  sha512: 1c9f0aff8f7f7dfcf07eb75f48c3b7ad6709f2bd68f2287b4bd07979e6fe12c2ab69d1ecf5d4b9b9ed7b96cd4cda5e55c116ea76ce3d9db9ff74538f0ea2317a
+  filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
+    - entity.system.platform_family == 'rhel'

@@ -1,0 +1,11 @@
+---
+type: Asset
+api_version: core/v2
+metadata:
+  name: sensu-plugins-windows
+  namespace: default
+spec:
+  filters:
+    - entity.system.os == 'windows'
+  sha512: 862735f69c5bdc2be0238adb2cc1c1977e4bf594f292982fa61744fc01bd0623d711134ceaafc0d26c70c594c5e052880f6dca6c698fc10b5c81b7f9d55d94e5
+  url: https://sensu-cre-caviar.s3.amazonaws.com/assets/windows-powershell-0.0.1.tar
