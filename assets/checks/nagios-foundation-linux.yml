@@ -8,5 +8,5 @@ spec:
   filters:
   - entity.system.os == 'linux'
   - entity.system.arch == 'amd64'
-  sha512: 5cf2c7e7ec6a003da0c7a509efec64b75a952467bfe3494800ce9dd6f44a773c2a413968bffe3362287820e7c637a1aca8c3b743b0e8d29675fcb8e87db8a2cc
-  url: https://github.com/ncr-devops-platform/nagios-foundation/releases/download/0.1.0/nagiosfoundation-linux-amd64-0.1.0.tgz
+  sha512: 8e3b9dbfa2dec0d59446621b0e24159d2a3ffc823f254e429914e9e904699f189b1e1b9f732fd1f73c820a3109dfb3f7713fe20dc8a159dfb2a7ed6a733e5e3d
+  url: https://github.com/ncr-devops-platform/nagios-foundation/releases/download/0.1.1/nagiosfoundation-linux-amd64-0.1.1.tgz
