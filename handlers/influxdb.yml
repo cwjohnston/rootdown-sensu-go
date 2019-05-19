@@ -6,12 +6,11 @@ metadata:
 spec:
   command: sensu-influxdb-handler -d sensu
   env_vars:
-  - INFLUXDB_ADDR=http://influxdb.default.svc.cluster.local:8086
-  - INFLUXDB_USER=sensu
-  - INFLUXDB_PASS=password
+  - INFLUXDB_ADDR=http://127.0.0.1:8086
   filters:
   - has_metrics
   handlers: null
-  runtime_assets: null
+  runtime_assets:
+  - influxdb-handler
   timeout: 10
   type: pipe
