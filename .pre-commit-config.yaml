@@ -1,0 +1,7 @@
+---
+repos:
+  - repo: https://github.com/adrienverge/yamllint.git
+    sha: v1.15.0
+    hooks:
+      - id: yamllint
+        args: ['-d {extends: default, rules: {indentation: {spaces: consistent}, line-length: disable}}', '-s']
